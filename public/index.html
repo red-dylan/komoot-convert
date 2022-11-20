@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Komoot Convert</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+    <body>
+        <form>
+            <label for="route-start">Start:</label><br />
+            <input type="text" id="route-start" name="route-start" /><br />
+            <label for="route-end">End:</label><br />
+            <input type="text" id="route-end" name="route-end" /><br />
+            <label for="route-sport">Sport:</label><br />
+            <select name="route-sport" id="route-sport">
+                <option value=""></option>
+                <option value="touringbicycle">Bike Touring</option>
+                <option value="mtb_advanced">Enduro Mountain Biking</option>
+                <option value="mtb_easy">Gravel Riding</option>
+                <option value="hike">Hiking</option>
+                <option value="mtb">Mountain Biking</option>
+                <option value="mountaineering">Mountaineering</option>
+                <option value="racebike">Road Cycling</option>
+                <option value="jogging">Running</option> </select
+            ><br />
+            <label for="route-fitness">Fitness:</label><br />
+            <select name="route-fitness" id="route-fitness">
+                <option value="1">Untrained</option>
+                <option value="2">Average</option>
+                <option value="3">In Good Shape</option>
+                <option value="4" selected>Athletic</option>
+                <option value="5">Pro</option> </select
+            ><br />
+            <label for="route-name">Route Name:</label><br />
+            <input type="text" id="route-name" name="route-name" /><br />
+            <input
+                type="radio"
+                id="one-way"
+                name="is-route-round-trip"
+                value="false"
+                checked="true"
+            />
+            <label for="one-way">One Way</label>
+            <input
+                type="radio"
+                id="route-round-trip"
+                name="is-route-round-trip"
+                value="true"
+            />
+            <label for="route-round-trip">Round Trip</label><br />
+            <button id="get-gpx_btn" type="button">Get GPX</button>
+        </form>
+    </body>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</html>
